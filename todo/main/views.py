@@ -8,3 +8,6 @@ def test(request):
 
 def second(request):
     return HttpResponse("uraa test2")
+    
+def third(request):
+    return HttpResponse("unforturnaly, but done")
