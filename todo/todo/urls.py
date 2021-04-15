@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from main.views import homepage, test, second, third
 from django.conf import settings
-from dlango.conf.urls.static import static
+from django.conf.urls.static import static
 
 
 urlpatterns = [
