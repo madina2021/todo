@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color:dimgray;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.create_container {
+    width: 80%;
+    background-color: rgb(205, 219, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.create_input {
+    padding: 12px 5px;
+    /*display: flex;*/
+    padding: 80%;
+    font-size: 18px;
+    width: 80%;
+    align-items: left;
+}
+
+.create_button{
+    padding: 12px 10px;
+    background-color: rgb(197, 117, 180);
+    border: 1px solid rgb(189, 18, 152);
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.create_button:active {
+    border: 1px solid  #CE9308;
+    box-shadow: 2px 2px 5px 3px #FCE4EC;
+}
+
+.todo_container{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.todo_item{
+    border: 1px solid grey;
+    border-radius:  5px;
+    width:  24%;
+    padding: 10px 15px;
+    background-color: #C8E6C9;
+    margin-bottom: 20px;
+}
+.todo_item_done{
+    background-color: #e0e0e0;
+    text-decoration: line-through;
+    color: #757575;
+    border-radius:  6px;
+    width:  24%;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.todo_item_done h4, .todo_item_done p, .todo_item_done span{
+    color: #757575;
+}
+.todo_item_done img{
+    opacity: 0.5;
+}
+.todo_item_market{
+    background-color: #e7ddb0;
+    border: 2px solid #fad66a;
+    width:  24%;
+    border-radius:  5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+.todo_item_header{
+    display: flex;
+    align-items: center;
+    min-height: 35px;
+}
+
+.todo_item_header h4{
+    font-size: 18px;
+    font-family:  sans-serif;
+}
+
+.todo_item_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo_item_footer p{
+    font-size:  15px;
+    font-family: sans-serif;
+}
+.todo_item_footer .action_buttons{
+    display: flex;
+}
+
+.todo_item_footer img{
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
