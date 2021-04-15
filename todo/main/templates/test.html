@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,5 +9,8 @@
 </head>
 <body>
     <h5>my test site</h5>
+    <h3> {% for todo in todo_list%}-{todo.created_at}</h3>
+    <h3>{{todo.text}}</h3>
+    {%endfor%}
 </body>
 </html>
