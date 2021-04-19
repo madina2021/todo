@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, HttpResponse, redirect
 from .models import ToDo
 
 def homepage (request):
@@ -14,3 +14,10 @@ def second(request):
     
 def third(request):
     return HttpResponse("unforturnaly, but done")
+
+def add_todo(request):
+    form =request.POST
+    text = form["todo_text"]
+    todo =ToDo(text = text)
+    todo.save()
+    return redirect(test)

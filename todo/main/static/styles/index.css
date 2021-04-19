@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color:dimgray;
+    /*color:dimgray;*/
 }
 
 .wrapper {
@@ -23,7 +23,7 @@
 
 .create_input {
     padding: 12px 5px;
-    /*display: flex;*/
+    display: flex;
     padding: 80%;
     font-size: 18px;
     width: 80%;
